@@ -13,6 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
       <title>Hair-Studio</title>
 </head>
 <body>
@@ -30,11 +31,11 @@
       <div id="sideNav">
             <nav>
                   <ul>
-                      <li><a href="#">HOME</a></li>
-                      <li><a href="#">FEATURES</a></li>
-                      <li><a href="#">SERVICES</a></li>
-                      <li><a href="#">TESTIMONIALS</a></li>
-                      <li><a href="#">MEET US</a></li>
+                      <li><a href="#banner">HOME</a></li>
+                      <li><a href="#feature">FEATURES</a></li>
+                      <li><a href="#service">SERVICES</a></li>
+                      <li><a href="#testimonial">TESTIMONIALS</a></li>
+                      <li><a href="#footer">MEET US</a></li>
                   </ul>
             </nav>
       </div>
@@ -230,6 +231,7 @@
       <i class=" fa fa-brands fa-instagram"></i>
       <i class=" fa fa-brands fa-twitter"></i>
       <i class=" fa fa-brands fa-youtube"></i>
+      <p>Copyright Atiq Tutioals YouTube Channel</p>
 </div>
 
     <script>
@@ -247,7 +249,10 @@
                       manu.src ='./image/manu.webp'
                 }
           }
-
+          var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+      });
           
     </script>
 </body>
